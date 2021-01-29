@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+$primaire: #9356DC;
+$secondaire:#FF79DA;
+$tertiaire:#99E2D0;
+$priSecDegrad: linear-gradient(0deg, rgba(170,93,220,1) 12%, rgba(255,121,218,1) 100%);
+$gray:rgb(226, 226, 226); 
+$grayLight: rgb(247, 247, 247);
+$dark:rgb(71, 71, 71);
+$text-police: 'Roboto', sans-serif;
+$title-police: 'Shrikhand', cursive;;  
+$boxShadow : 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+/* RESET CSS */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* HEADER */
+.header__img{
+    background: url(/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    background-size: cover;
+    height: 20vh;
+    width: 100vw;
+}
+/* MENU */
+.menu{
+    background: $gray;
+    border
+    .header__menu{
+     display: flex;
+     flex-direction: row;
+color: blue;
+
+    }
+}
+/* FOOTER */
+footer{
+    background: $dark;
+    padding: 20px;
+    color: white;
+    h3{
+      font-family: $title-police;
+      margin: 15px 0;
+      font-weight: 500;
+    }
+    p{
+      font-family: $text-police;
+      margin: 10px 0;
+    }
+  }
