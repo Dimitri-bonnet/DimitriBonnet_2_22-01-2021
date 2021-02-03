@@ -5,33 +5,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/a13498b757.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
-    <title>OHMYFOOD - A la francaise</title>
+    <link rel="stylesheet" type="text/css" href="/css/restaurants.css">
+    <title>À la française</title>
 </head>
 <body>
     <header>
-        <div class="header__logo">
-            <a href="/index.html">
-                <i class="fas fa-arrow-left fa-2x"></i>
-            </a>         
-            <div class="text-center">
-                <h1 class="text-center">ohmyfood</h1>
-            </div>   
+        <div class="header">
+            <span class="header__navBack">
+                <a href="/index.html">
+                    <i class="fas fa-arrow-left fa-1x"></i>
+                </a>
+            </span>      
+            <h1 class="text-center">ohmyfood</h1>
         </div>
     </header>
+    <img class="header__img" src="./img/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="">
     <main>
-        <section>
-            <div>
-                <h4>ENTRÉES</h4>
+        <section class="menu">
+            <div class="header__menu">
+                <span>À la française</span>
+                <i class="far fa-heart"></i>
             </div>
-            <div>
-                <h4>PLATS</h4>
-            </div>
-            <div>
-                <h4>DESSERTS</h4>
-            </div>
-
-            <button>Commander</button>
+           <div class="content__menu">
+               <!--  -->
+                <h4 class="menu_title my-2">ENTRÉES</h4>
+               
+                <div class="menu__item">
+                    <h4>Tartare de poulpe acidulé</h4>
+                    <div class="menu__desc">
+                        <p>
+                            Aux zestes d'orange
+                        </p>
+                        <p class="price__desc">
+                            25€
+                        </p>
+                    </div>        
+                </div>
+                <div class="menu__item">
+                    <h4>Velouté de légumes d'antan </h4>
+                    <div class="menu__desc">
+                        <p>
+                            Carotte, panais, topinambour
+                        </p>
+                        <p class="price__desc">
+                            35€
+                        </p>
+                    </div>        
+                </div>
+                <div class="menu__item">
+                    <h4>Soupe à l'oignon</h4>
+                    <div class="menu__desc">
+                        <p>
+                            Revisitée
+                        </p>
+                        <p class="price__desc">
+                            20€
+                        </p>
+                    </div>        
+                </div>
+                <!--  -->
+               <h4 class="menu_title my-2">PLATS</h4>
+               <div class="menu__item">
+                    <h4>Coquilles Saint-Jacques</h4>
+                    <div class="menu__desc">
+                        <p>
+                            Accompagnées d'une purée de panais
+                        </p>
+                        <p class="price__desc">
+                            40€
+                        </p>
+                    </div>        
+                </div>
+                <div class="menu__item">
+                    <h4>Magret de canard</h4>
+                    <div class="menu__desc">
+                        <p>
+                            Et parmentier de pommes de terre
+                        </p>
+                        <p class="price__desc">
+                            35€
+                        </p>
+                    </div>        
+                </div>
+                <div class="menu__item">
+                    <h4>Pigeonneau d’Ille-et-Vilaine</h4>
+                    <div class="menu__desc">
+                        <p>
+                            Sur son lit de gnocchis aux légumes
+                        </p>
+                        <p class="price__desc">
+                            44€
+                        </p>
+                    </div>        
+                </div>
+                <!--  -->
+                <h4 class="menu_title my-2">DESSERTS</h4>
+                <div class="menu__item">
+                    <h4>Pétales de violettes glacés</h4>
+                    <div class="menu__desc">
+                        <p>
+                            Et purée de noisettes
+                        </p>
+                        <p class="price__desc">
+                            18€
+                        </p>
+                    </div>        
+                </div>
+                <div class="menu__item">
+                    <h4>Fondant au chocolat</h4>
+                    <div class="menu__desc">
+                        <p>
+                            Revisité
+                        </p>
+                        <p class="price__desc">
+                            22€
+                        </p>
+                    </div>        
+                </div>
+                <div class="menu__item">
+                    <h4 >Millefeuille croustillant</h4>
+                    <div class="menu__desc">
+                        <p>
+                            Myrtilles et pâte d’amande
+                        </p>
+                        <p class="price__desc">
+                            23€  
+                        </p>
+                    </div>        
+                </div>
+                <div class="menu__button text-center">
+                    <button>Commander</button>
+               </div>
+           </div>
         </section>
     </main>
     <footer>
@@ -39,7 +144,7 @@
         <p><i class="fas fa-utensils mr-2"></i>Proposer un restaurant</p>
         <p><i class="fas fa-hands-helping mr-2"></i>Devenir partenaire</p>
         <p>Mentions légales</p>
-        <p>Contact</p>
+        <p><a href="mailto:contact@ohmyfood.com">Contact</a></p>
     </footer>
 </body>
 </html>

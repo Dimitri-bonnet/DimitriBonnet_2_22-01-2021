@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-/* RESET CSS */
 *,
 *::after,
 *::before {
@@ -10,21 +9,103 @@
 }
 
 /* HEADER */
+header .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Shrikhand", cursive;
+  position: relative;
+}
+header .header .header__navBack {
+  position: absolute;
+  left: 10px;
+}
+
 .header__img {
-  background: url(/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
-  background-size: cover;
-  height: 20vh;
   width: 100vw;
+  height: 35vh;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* MENU */
 .menu {
-  background: #e2e2e2;
+  position: relative;
+  margin-top: -4rem;
+  background: #f7f7f7;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
 }
-.menu border .header__menu {
+.menu .header__menu {
   display: flex;
   flex-direction: row;
-  color: blue;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+  font-size: 20px;
+}
+.menu .content__menu {
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+}
+.menu .content__menu .menu_title {
+  font-weight: 200;
+  position: relative;
+  margin: 20px 0;
+}
+.menu .content__menu .menu_title::after {
+  content: "";
+  background-color: #99e2d0;
+  color: #99E2D0;
+  width: 2.5rem;
+  height: 0.25rem;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+.menu .content__menu .menu__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  /*  
+  width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;  */
+  cursor: pointer;
+}
+.menu .content__menu .menu__item .menu__desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .content__menu .menu__item .menu__desc .title__desc {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu .content__menu .menu__item .menu__desc .price__desc {
+  font-weight: 800;
+}
+.menu .content__menu .menu__button button {
+  border-radius: 36px;
+  background: linear-gradient(0deg, #aa5ddc 12%, #ff79da 100%);
+  padding: 12px 30px;
+  color: white;
+  border: none;
+  margin: 30px 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+.menu .content__menu .menu__button button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 /* FOOTER */
@@ -41,6 +122,63 @@ footer h3 {
 footer p {
   font-family: "Roboto", sans-serif;
   margin: 10px 0;
+}
+footer p a {
+  color: white;
+  text-decoration: none;
+}
+
+/* CSS like bootstrap */
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-5 {
+  padding: 2rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.my-2 {
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.mx-2 {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mt-5 {
+  margin-top: 1.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /*# sourceMappingURL=restaurants.css.map */
