@@ -20,6 +20,9 @@ header .header .header__navBack {
   position: absolute;
   left: 10px;
 }
+header .header .header__navBack a {
+  color: inherit;
+}
 
 .header__img {
   width: 100vw;
@@ -45,6 +48,40 @@ header .header .header__navBack {
   font-family: "Shrikhand", cursive;
   font-weight: 500;
   font-size: 20px;
+}
+.menu .header__menu .restaurant__icone {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+  font-size: 20px;
+}
+.menu .header__menu .restaurant__icone .icone_empty {
+  z-index: 2;
+}
+.menu .header__menu .restaurant__icone .icone_empty:hover {
+  z-index: 1;
+  display: none;
+}
+.menu .header__menu .restaurant__icone .icone_full {
+  z-index: 1;
+  color: white;
+}
+.menu .header__menu .restaurant__icone .icone_full:hover {
+  background: linear-gradient(0deg, #aa5ddc 12%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 2;
+}
+.menu .header__menu .restaurant__icone i {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
 }
 .menu .content__menu {
   font-family: "Roboto", sans-serif;
@@ -179,6 +216,38 @@ footer p a {
 
 .text-center {
   text-align: center;
+}
+
+/* APPEAR ANIMATION */
+.animation--appear {
+  animation: appear 1.4s ease-in-out;
+}
+
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-1 {
+  animation-delay: 0.4s;
+}
+
+.delay-2 {
+  animation-delay: 0.8s;
+}
+
+.delay-3 {
+  animation-delay: 1s;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=restaurants.css.map */

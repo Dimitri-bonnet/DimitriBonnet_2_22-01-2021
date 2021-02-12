@@ -62,14 +62,12 @@ header{
   padding: 20px;
   font-family: $text-police;
   position: relative;
- /*  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
   h2{
     font-weight: 800;
   }
   .fonctionnement__item{
+    display: flex;
+    align-items: center;
     background: $grayLight;
     padding: 30px;
     height: 10vh;
@@ -88,7 +86,7 @@ header{
       justify-content: center;
       position: absolute;
       left: -10px;
-      top: 25px;
+      top: 20px;
       color: white;
     }
     p{
@@ -111,16 +109,9 @@ header{
 .container__restaurants{
   background: $grayLight;
   padding: 20px;
-  
   a{
     text-decoration: none;
     color: black;
-  }
-  .content__restaurants{
-  /*   display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
   }
   h2{
     font-family:$text-police;
@@ -162,10 +153,39 @@ header{
       h4{
         font-size: 18px;
       }
-      i{
-        font-size: 25px;
-        &:hover{
-          color: $priSecDegrad; 
+      .restaurant__icone{
+        position: absolute;
+        display: inline-block;
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        vertical-align: middle;
+        font-size: 20px;
+        right: 0px;
+        .icone_empty{
+          z-index: 2;
+          &:hover{
+            z-index: 1;
+            display: none;
+          }
+        }
+         .icone_full{
+          z-index: 1;
+          color: white;
+          &:hover{
+            background: $priSecDegrad;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            z-index: 2;
+          }
+        } 
+        i{
+          position: absolute;
+          left: 0px;
+          top: 10px;
+          width: 100%;
+          text-align: center;
+          cursor: pointer;
         }
       }
     }
@@ -233,6 +253,9 @@ margin-right: 0.25rem;
 .text-center {
   text-align: center;
 }
+
+/* ANIMATION */
+/* LOADER */
 /* .loader{
   position: fixed;
   height: 100%;

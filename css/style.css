@@ -67,15 +67,13 @@ header .header__localisation p {
   padding: 20px;
   font-family: "Roboto", sans-serif;
   position: relative;
-  /*  display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center; */
 }
 .container__fonctionnement h2 {
   font-weight: 800;
 }
 .container__fonctionnement .fonctionnement__item {
+  display: flex;
+  align-items: center;
   background: #fcfcfc;
   padding: 30px;
   height: 10vh;
@@ -95,7 +93,7 @@ header .header__localisation p {
   justify-content: center;
   position: absolute;
   left: -10px;
-  top: 25px;
+  top: 20px;
   color: white;
 }
 .container__fonctionnement .fonctionnement__item p {
@@ -121,12 +119,6 @@ header .header__localisation p {
 .container__restaurants a {
   text-decoration: none;
   color: black;
-}
-.container__restaurants .content__restaurants {
-  /*   display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
 }
 .container__restaurants h2 {
   font-family: "Roboto", sans-serif;
@@ -169,11 +161,40 @@ header .header__localisation p {
 .container__restaurants .restaurant__item .restaurant__info h4 {
   font-size: 18px;
 }
-.container__restaurants .restaurant__item .restaurant__info i {
-  font-size: 25px;
+.container__restaurants .restaurant__item .restaurant__info .restaurant__icone {
+  position: absolute;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+  font-size: 20px;
+  right: 0px;
 }
-.container__restaurants .restaurant__item .restaurant__info i:hover {
-  color: linear-gradient(0deg, #aa5ddc 12%, #ff79da 100%);
+.container__restaurants .restaurant__item .restaurant__info .restaurant__icone .icone_empty {
+  z-index: 2;
+}
+.container__restaurants .restaurant__item .restaurant__info .restaurant__icone .icone_empty:hover {
+  z-index: 1;
+  display: none;
+}
+.container__restaurants .restaurant__item .restaurant__info .restaurant__icone .icone_full {
+  z-index: 1;
+  color: white;
+}
+.container__restaurants .restaurant__item .restaurant__info .restaurant__icone .icone_full:hover {
+  background: linear-gradient(0deg, #aa5ddc 12%, #ff79da 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 2;
+}
+.container__restaurants .restaurant__item .restaurant__info .restaurant__icone i {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
 }
 
 /* FOOTER */
@@ -249,6 +270,8 @@ footer p a {
   text-align: center;
 }
 
+/* ANIMATION */
+/* LOADER */
 /* .loader{
   position: fixed;
   height: 100%;
