@@ -8,6 +8,59 @@
   box-sizing: border-box;
 }
 
+/* CSS like bootstrap */
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-5 {
+  padding: 2rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.my-2 {
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.mx-2 {
+  margin: 0 0.5rem 0 0.5rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mt-5 {
+  margin-top: 1.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
 /* HEADER */
 header .header {
   display: flex;
@@ -103,33 +156,43 @@ header .header .header__navBack a {
   bottom: -5px;
 }
 .menu .content__menu .menu__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin: 20px 0;
   background: white;
   padding: 10px;
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  /*  
-  width: 80%;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;  */
   cursor: pointer;
 }
-.menu .content__menu .menu__item .menu__desc {
+.menu .content__menu .menu__item .content__menu_item {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu .content__menu .menu__item .content__menu_item .menu__desc {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.menu .content__menu .menu__item .menu__desc .title__desc {
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
-}
-.menu .content__menu .menu__item .menu__desc .price__desc {
+.menu .content__menu .menu__item .content__menu_item .menu__desc .price__desc {
   font-weight: 800;
+}
+.menu .content__menu .menu__item .content__menu_item .menu__check {
+  background-color: #99e2d0;
+  width: 50px;
+  height: 50px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu .content__menu .menu__item .content__menu_item .menu__check .menu__iconecheck {
+  color: white;
+  font-size: 25px;
+}
+.menu .content__menu .menu__item .content__menu_item .menu__check:hover {
+  transform: rotate(45deg);
 }
 .menu .content__menu .menu__button button {
   border-radius: 36px;
@@ -165,62 +228,9 @@ footer p a {
   text-decoration: none;
 }
 
-/* CSS like bootstrap */
-.p-2 {
-  padding: 0.5rem;
-}
-
-.p-5 {
-  padding: 2rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
-}
-
-.my-2 {
-  margin: 0.5rem 0 0.5rem 0;
-}
-
-.mx-2 {
-  margin: 0 0.5rem 0 0.5rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
-.mt-5 {
-  margin-top: 1.5rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.5rem;
-}
-
-.mr-2 {
-  margin-right: 0.5rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
-.text-center {
-  text-align: center;
-}
-
 /* APPEAR ANIMATION */
 .animation--appear {
-  animation: appear 1.4s ease-in-out;
+  animation: appear 1.4s ease-in;
 }
 
 .delay-0 {
@@ -228,25 +238,33 @@ footer p a {
 }
 
 .delay-1 {
-  animation-delay: 0.4s;
+  animation-delay: 0.5s;
 }
 
 .delay-2 {
-  animation-delay: 0.8s;
+  animation-delay: 1s;
 }
 
 .delay-3 {
-  animation-delay: 1s;
+  animation-delay: 1.5s;
 }
 
 @keyframes appear {
   from {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
