@@ -164,10 +164,14 @@ header .header .header__navBack a {
   cursor: pointer;
 }
 .menu .content__menu .menu__item .content__menu_item {
-  /* width: 100%;
-  white-space: nowrap; 
+  display: flex;
+  justify-content: space-between;
+}
+.menu .content__menu .menu__item .content__menu_item h4 {
+  width: 10%;
+  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;  */
+  text-overflow: ellipsis;
 }
 .menu .content__menu .menu__item .content__menu_item .menu__desc {
   display: flex;
@@ -176,6 +180,9 @@ header .header .header__navBack a {
 }
 .menu .content__menu .menu__item .content__menu_item .menu__desc .price__desc {
   font-weight: 800;
+}
+.menu .content__menu .menu__item .content__menu_item .menu__desc:hover {
+  /* Gerer l'animation et apparition */
 }
 .menu .content__menu .menu__item .content__menu_item .menu__check {
   background-color: #99e2d0;
@@ -266,59 +273,80 @@ footer p a {
     transform: rotate(0deg);
   }
 }
-/* .menu__item1{
-  background-color: #fff;
-  padding: 1rem;
+.content {
+  background: blue;
   display: flex;
-  border-radius: .75rem;
-  margin: 1rem 0;
-  box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
-  overflow: hidden;
+  justify-content: space-between;
+  margin: 10px;
+  border-radius: 12px;
   cursor: pointer;
-  animation: itemAppear .6s;
-  animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-  animation-fill-mode: both;
-  max-width: 100%;
-  .menu__item2{
-    flex: 1;
-    .menu__title{
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
-    .menu__desc{
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
+}
+.content .content-menu {
+  padding: 5px;
+  width: 100%;
+}
+.content .content-menu h4 {
+  background-color: yellow;
+  width: 90%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .content-menu .desc {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: yellowgreen;
+}
+.content .content-menu .desc .desct {
+  background-color: yellow;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.content .check {
+  /*    display: flex;
+     justify-content: center;
+     align-items: center; */
+  background-color: red;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 0px;
+  transition: width 0.5s;
+}
+.content .check i {
+  display: none;
+}
+.content:hover .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: apear 1s ease;
+  width: 50px;
+  height: auto;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.content:hover .check i {
+  display: block;
+  animation: rotation 0.75s ease;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(200deg);
   }
-  .menu__price{
-    font-weight: 700;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding-left: .5rem;
-  }
-  .menu__check{
-    background-color: #99e2d0;
-    margin: -1rem -5rem -1rem 1rem;
-    width: 4rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition-duration: .5s;
-    .menu__icon{
-      height: 1.6rem;
-    width: 1.6rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 100px;
-    transform: rotate(180deg);
-    transition-duration: .5s;
-    }
+  100% {
+    transform: rotate(0deg);
   }
 }
- */
+/* @keyframes apear {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+} */
 
 /*# sourceMappingURL=restaurants.css.map */
