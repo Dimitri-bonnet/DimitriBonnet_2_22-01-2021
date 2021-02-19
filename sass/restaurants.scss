@@ -178,6 +178,7 @@ header{
                 box-shadow: $boxShadow;
                 &:hover{
                     box-shadow: $boxShadowMore;
+                    background:  $priSecDegradHover;
                 }
             }   
         }

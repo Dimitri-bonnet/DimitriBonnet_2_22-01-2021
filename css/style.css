@@ -117,6 +117,7 @@ header .header__localisation p {
 }
 .container__booking .booking__button button:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 8px 8px rgba(0, 0, 0, 0.23);
+  background: linear-gradient(0deg, #aa5ddc 12%, #ff79da 80%);
 }
 
 /* FONCTIONNEMENT */
@@ -282,7 +283,7 @@ footer p a {
   width: 100%;
   left: 0;
   top: 0;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.397);
   z-index: 10000;
   display: flex;
   align-items: center;
