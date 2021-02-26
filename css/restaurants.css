@@ -212,7 +212,6 @@ header .header .header__navBack a {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* animation: apear 1s ease; */
   width: 50px;
   height: auto;
   border-bottom-right-radius: 12px;
