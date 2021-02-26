@@ -283,12 +283,12 @@ footer p a {
   width: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.397);
+  background-color: black;
   z-index: 10000;
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: appear 4s ease-in-out;
+  animation: appear 5s ease-in-out;
   animation-delay: 1s;
   animation-fill-mode: both;
 }
@@ -302,7 +302,7 @@ footer p a {
   color: white;
   font-family: "Shrikhand", cursive;
   margin: 10px 0;
-  animation: appear 4s ease-in-out;
+  animation: appear 5s ease-in-out;
   animation-fill-mode: both;
 }
 .loader .loader__container .loader__item {

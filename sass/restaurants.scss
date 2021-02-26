@@ -106,18 +106,18 @@ header{
             .content__menu{
               padding: 5px;
               width: 100%;
+              transition: 0.5s width ;
               .title__menu{
-                /* background-color: yellow; */
                 h4{
                   white-space: nowrap; 
                   overflow: hidden;
                   text-overflow: ellipsis;
+                  
                 }
               }
               .desc__menu{
                 display: flex;
                 justify-content: space-between;
-                /* background-color: yellow; */
                 .desc__desc{
                   white-space: nowrap; 
                   overflow: hidden;
@@ -130,7 +130,6 @@ header{
                   white-space: nowrap; 
                   overflow: hidden;
                   text-overflow: ellipsis;
-                  
                 }
               } 
             }
@@ -140,13 +139,19 @@ header{
               margin-right: -10px;
               border-bottom-right-radius: 12px;
               border-top-right-radius: 12px;
-              width: 0px;
+              width: 0%;
               transition: width 0.5s;
               i{
                 display: none;
               }
             }
             &:hover{
+              @media screen and (max-width: 500px) {
+                .content__menu {
+                  width: 88%;
+                  
+                }
+              }
             .check__menu{
               display: flex;
               justify-content: center;

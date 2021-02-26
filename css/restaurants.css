@@ -167,9 +167,7 @@ header .header .header__navBack a {
 .menu .content__menu .container__menu__item .content__menu {
   padding: 5px;
   width: 100%;
-}
-.menu .content__menu .container__menu__item .content__menu .title__menu {
-  /* background-color: yellow; */
+  transition: 0.5s width;
 }
 .menu .content__menu .container__menu__item .content__menu .title__menu h4 {
   white-space: nowrap;
@@ -179,7 +177,6 @@ header .header .header__navBack a {
 .menu .content__menu .container__menu__item .content__menu .desc__menu {
   display: flex;
   justify-content: space-between;
-  /* background-color: yellow; */
 }
 .menu .content__menu .container__menu__item .content__menu .desc__menu .desc__desc {
   white-space: nowrap;
@@ -200,11 +197,16 @@ header .header .header__navBack a {
   margin-right: -10px;
   border-bottom-right-radius: 12px;
   border-top-right-radius: 12px;
-  width: 0px;
+  width: 0%;
   transition: width 0.5s;
 }
 .menu .content__menu .container__menu__item .check__menu i {
   display: none;
+}
+@media screen and (max-width: 500px) {
+  .menu .content__menu .container__menu__item:hover .content__menu {
+    width: 88%;
+  }
 }
 .menu .content__menu .container__menu__item:hover .check__menu {
   display: flex;
