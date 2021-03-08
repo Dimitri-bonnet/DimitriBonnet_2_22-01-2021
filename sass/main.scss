@@ -138,7 +138,7 @@ header{
     }
      .restaurant__badge{
       background-color: #99e2d0;
-      font-weight: 1000;
+      font-weight: 800;
       color: #1b6150;
       padding: .5rem;
       border-radius: .125rem;
@@ -272,7 +272,6 @@ footer{
   100%{
     transform: scale(0);
     opacity: 0;
-    color: none;
     z-index: -10;
   }
 } 
